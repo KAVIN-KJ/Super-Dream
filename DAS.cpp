@@ -1,22 +1,11 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int num;
-    cin>>num;
-    int arr[num];
-    for(int i=0;i<num;i++){
-        cin>>arr[i];
+    int arr[100];
+    fill(begin(arr),end(arr),0);
+    for(int i=0;i<100;i++){
+        cout<<" "<<arr[i];
     }
-    int k;
-    cin>>k;
-    while(k>0){
-        for(int i=0;i<num-1;i++){
-            swap(arr[i],arr[i+1]);
-        }
-        k--;
-    }
-    for(int i=0;i<num;i++){
-        cout<<arr[i]<<" ";
-    }
+    return 0;
     
 }

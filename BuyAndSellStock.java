@@ -11,9 +11,7 @@ public class BuyAndSellStock {
         System.out.println(solve2(prices));
         System.out.println(solve3(prices));
         in.close();
-    }
-
-    
+    }    
     private static int solve2(int[] prices) {
         int start = prices[0];
         int ans = 0;
